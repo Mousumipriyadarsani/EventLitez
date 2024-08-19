@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #444;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#event-creation {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+#event-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#event-form label {
+    margin-bottom: 10px;
+}
+
+#event-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#event-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#event-form button:hover {
+    background-color: #3e8e41;
+}
+
+#event-listing {
+    margin-top: 20px;
+}
+
+#event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#event-list li {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#event-list li:last-child {
+    border-bottom: none;
+}
+
+#event-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#event-list h3 {
+    margin-top: 0;
+}
+
+#event-list p {
+    margin-bottom: 10px;
+}
+
+/* Add some animations */
+#event-list li {
+    transition: background-color 0.3s ease;
+}
+
+#event-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some responsive design */
+@media (max-width: 768px) {
+    #event-creation {
+        width: 80%;
+    }
+    #event-list li {
+        padding: 15px;
+        color: red;
+    }
+}
+
+@media (max-width: 480px) {
+    #event-creation {
+        width: 90%;
+    }
+    #event-list li {
+        padding: 10px;
+    }
+}
